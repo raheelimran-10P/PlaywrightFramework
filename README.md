@@ -12,7 +12,7 @@ To set up this project on your local machine:
 
 ## Running Tests
 
-Run `npx playwright test`
-Run `npx playwright show-report`
+Run `npx playwright test`.
+Run `npx playwright show-report`.
 
 ## More Info
