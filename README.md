@@ -10,6 +10,14 @@ To set up this project on your local machine:
 3. Now if you install any other packages so use command `npm install -save-dev <package-name>` it will install package locally. If you get some error after this command so run `npm cache clean -force`.
 4. If you update or install any new package so update package.json on repo.
 
+## Setup .env file
+
+Create .env file at the root of the project location, and add below values like
+```
+BASE_URL=<place-your-url-here>
+
+```
+
 ## Running Tests
 
 Run `npx playwright test`.

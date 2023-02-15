@@ -1,5 +1,7 @@
 // demo-page.js
 const { expect } = require('@playwright/test');
+require('dotenv').config();
+
 
 exports.DemoPage = class DemoPage {
 
@@ -15,7 +17,7 @@ exports.DemoPage = class DemoPage {
   }
 
   async goto() {
-    await this.page.goto('https://playwright.dev');
+    await this.page.goto(process.env.BASE_URL);
   }
 
   async getStarted() {
