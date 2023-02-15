@@ -1,6 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 const { DemoPage } = require('../POM/Pages/demo-page');
+const { demoText } = require('../TestData/TestData');
 
 test('getting started should contain table of contents', async ({ page }) => {
   const playwrightDev = new DemoPage(page);
@@ -22,5 +23,5 @@ test('should show Page Object Model article', async ({ page }) => {
   const playwrightDev = new DemoPage(page);
   await playwrightDev.goto();
   await playwrightDev.pageObjectModel();
-  await expect(page.locator('article')).toContainText('Page Object Model is a common pattern');
+  await expect(page.locator('article')).toContainText(demoText);
 });
