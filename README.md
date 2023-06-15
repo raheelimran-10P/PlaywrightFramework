@@ -23,4 +23,7 @@ BASE_URL=<place-your-url-here>
 Run `npx playwright test`.
 Run `npx playwright show-report`.
 
+## Open UI interface
+Run `npx playwright test --ui`
+
 ## More Info

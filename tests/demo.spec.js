@@ -3,7 +3,17 @@ const { test, expect } = require('@playwright/test');
 const { DemoPage } = require('../POM/Pages/demo-page');
 const { demoText } = require('../TestData/TestData');
 
-test('getting started should contain table of contents', async ({ page }) => {
+test.describe("navigation", () => {
+  test.beforeEach(async ({ page }) => {
+    // Go to the starting url before each test.
+  });
+
+  test.afterEach(async ({ page }) => {
+    // do something each test.
+  });
+  
+
+  test('getting started should contain table of contents', async ({ page }) => {
   const playwrightDev = new DemoPage(page);
   await playwrightDev.goto();
   await playwrightDev.getStarted();
@@ -17,11 +27,13 @@ test('getting started should contain table of contents', async ({ page }) => {
     `Generate tests with Codegen`,
     `See a trace of your tests`
   ]);
-});
+  });
 
-test('should show Page Object Model article', async ({ page }) => {
+  test('should show Page Object Model article', async ({ page }) => {
   const playwrightDev = new DemoPage(page);
   await playwrightDev.goto();
   await playwrightDev.pageObjectModel();
   await expect(page.locator('article')).toContainText(demoText);
+  });
+
 });
