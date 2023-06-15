@@ -1,0 +1,21 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "description": "Playwright Framework using POM",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raheelimran-10P/PlaywrightFramework.git"
+  },
+  "author": "Muhammad Raheel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raheelimran-10P/PlaywrightFramework/issues"
+  },
+  "homepage": "https://github.com/raheelimran-10P/PlaywrightFramework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.35.0",
+    "dotenv": "^16.0.3"
+  }
+}
